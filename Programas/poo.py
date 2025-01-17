@@ -44,18 +44,22 @@ class Personaje:
         print(self.nombre, "a realizado", daño, "puntos de daño a" , enemigo.nombre)
         print("vida de" , enemigo.nombre, "Es", enemigo.vida)
 
-# Creación del objeto mi_personaje
-mi_personaje = Personaje("homero simpson", 1000, 3, 70, 100,)
-mi_personaje.imprimir_atributos()
-mi_personaje.subir_nivel(10, 1, 5)
-mi_personaje.imprimir_atributos()
-mi_enemigo = Personaje("Ned flanders", 70, 30,70,100)
-mi_personaje.atacar(mi_enemigo)
-mi_enemigo.imprimir_atributos()
+class Guerrero(Personaje):
+    pass
+tlatoani = Guerrero("Apocalipto", 50,70,30,100)
 
-print(mi_personaje.dañar(mi_enemigo))
-print(mi_personaje.vivo())
-print(mi_personaje.muerto())
+# Creación del objeto mi_personaje
+# mi_personaje = Personaje("homero simpson", 1000, 3, 70, 100,)
+# mi_personaje.imprimir_atributos()
+# mi_personaje.subir_nivel(10, 1, 5)
+# mi_personaje.imprimir_atributos()
+# mi_enemigo = Personaje("Ned flanders", 70, 30,70,100)
+# mi_personaje.atacar(mi_enemigo)
+# mi_enemigo.imprimir_atributos()
+
+# print(mi_personaje.dañar(mi_enemigo))
+# print(mi_personaje.vivo())
+# print(mi_personaje.muerto())
 
 # Sobreescritura de atributos (comentada en este caso)
 # mi_personaje.nombre = "elbarto"
@@ -63,6 +67,4 @@ print(mi_personaje.muerto())
 # mi_personaje.inteligencia = 2
 # mi_personaje.defensa = 2
 # mi_personaje.vida = 2
-
-
 
